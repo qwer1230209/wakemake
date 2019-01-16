@@ -57,7 +57,6 @@ background-color: black;
     justify-content: flex-end;
     align-items: center;
     width: 1200px;
-    border: 1px solid #000;
     height: 78px;
 }
 .search_flex  {
@@ -82,7 +81,6 @@ background-color: black;
 .header_menu {display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
     font-size: 1.1rem;
 }
 .header_menu>li {
@@ -126,6 +124,7 @@ background-color: black;
     background-color: white;
 }
 .image_slider {
+    border-bottom: 3px solid lightgray;
     border-top: 4px solid #d4202b;
     width: 100%;
     display: flex; z-index:1;
@@ -138,31 +137,36 @@ background-color: black;
 .active {
     z-index: 1;
 }
-#bgimg {
-    width: 100%;
+.bg_c {
+ background-size: cover;
+    position: absolute;
+    border: 1px solid #000;
     background-image: url(wake_img/bg.jpg);
-    height: 2070px;
+    width: 100%;
+    height: 2000px;
 }
-.best {
+.wrap {
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    width: 100%;
+    border: 1px solid green;
+}
+.wrap_wrap {
+    width: 1200px;
+}
+.best {
     width: 100%;
 	height:850px;
-  
 }
-.best_title {position: absolute;
-    top: 70px;
+.best_title {
+    padding: 40px 30px 70px 0px;
     width: 50%;
-	border: 3px solid #000;
     left: 200px;
 }
-.best h1,p {color: #fff;
+.best h1,p {color: #3c3c3c;
     display: inline-block;
     font-family: "나눔스퀘어","돋움";
-}
-.best p {
-    margin-left: 10px;
 }
 .best h1 {
     font-size: 2.6rem;
@@ -170,26 +174,51 @@ background-color: black;
 .best ul {top: 230px;
    left: 200px;
     display: flex;
-    position: absolute;
-    border: 1px solid green;
-}
-.best li:nth-child(2) {
-    margin-left: 240px;
-    margin-right: 240px;
+    justify-content: space-between;
 }
 .best_img {
-    border: 1px solid red;
+    position: relative;
     background: url(wake_img/main_bestbox1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
-    height: 240px;
+    height: 301px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best_img h1 {
+    position: absolute;
+    top: 30px;
+    left: 26px;
 }
 .best_box {
-    margin-top: 20px;
     background: url(wake_img/main_bestbox.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
     height: 306px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.best_box p {
+    font-family: "나눔바른고딕","돋움";
+    text-align:center;
+    padding: 30px 10px 50px 10px;
+    display: block;
+    color: #ffd4d4;
+}
+.best_box h2,h4 {
+    color: #fff;
+}
+.best_box h4 {padding: 0px 40px 0px 40px;
+    text-align: center;  font-weight: 100;
+    font-size: 1.2rem;
+}
+.best_box h2 {
+    font-weight: 100;
+    font-size: 1.7rem;
 }
