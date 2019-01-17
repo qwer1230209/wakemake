@@ -12,7 +12,7 @@
 }
 #container {
 max-width: 100%;
-    border: 1px solid blue;
+
 }
 header {
     display: flex;
@@ -140,10 +140,9 @@ background-color: black;
 .bg_c {
  background-size: cover;
     position: absolute;
-    border: 1px solid #000;
     background-image: url(wake_img/bg.jpg);
     width: 100%;
-    height: 2000px;
+    height: 2543px;
 }
 .wrap {
     display: flex;
@@ -153,25 +152,43 @@ background-color: black;
     border: 1px solid green;
 }
 .wrap_wrap {
+    z-index: 99;
     width: 1200px;
 }
-.best {
-    width: 100%;
-	height:850px;
+.redline {
+    margin-bottom: 10px;
 }
-.best_title {
-    padding: 40px 30px 70px 0px;
+.best,.event {
+    width: 100%;
+	height:941px;
+}
+.best_title,.event_title {
+    padding: 70px 30px 70px 0px;
     width: 50%;
     left: 200px;
 }
-.best h1,p {color: #3c3c3c;
+.subtitle { margin-left: 20px;
+    display: inline-block;
+}
+.underline {
+    width: 206px;
+    height: 20px;
+    background-size: contain;
+    background-image: url(wake_img/underline.png);
+    background-repeat: no-repeat;
+}
+.best h1,p, .event h1,p {color: #3c3c3c;
     display: inline-block;
     font-family: "나눔스퀘어","돋움";
 }
-.best h1 {
-    font-size: 2.6rem;
+.week {
+    font-size: 1.3rem;
+
 }
-.best ul {top: 230px;
+.best h1,.event h1 {
+    font-size: 3rem;
+}
+.best ul,.event ul {top: 230px;
    left: 200px;
     display: flex;
     justify-content: space-between;
@@ -181,24 +198,28 @@ background-color: black;
     background: url(wake_img/main_bestbox1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 301px;
+    width: 234px;
+    height: 235px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.best_img img {
+    width: 110px;
+}
 .best_img h1 {
     position: absolute;
-    top: 30px;
-    left: 26px;
+    top: 20px;
+    left: 21px;
+    font-size: 2rem;
 }
 .best_box {
     background: url(wake_img/main_bestbox.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 302px;
-    height: 306px;
+    width: 234px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,18 +228,90 @@ background-color: black;
 .best_box p {
     font-family: "나눔바른고딕","돋움";
     text-align:center;
-    padding: 30px 10px 50px 10px;
+    padding: 30px 10px 30px 10px;
     display: block;
     color: #ffd4d4;
+    font-size: 1rem;
 }
 .best_box h2,h4 {
     color: #fff;
 }
 .best_box h4 {padding: 0px 40px 0px 40px;
     text-align: center;  font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .best_box h2 {
     font-weight: 100;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
+.event h1,.event p {
+    color: #fff;
+}
+.event p {
+    font-weight: 100;
+}
+.event_box {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #000;
+}
+  #containe
+        {
+            width: 642px;
+            height: auto;
+            overflow: hidden;
+        }
+        #list-container
+        {
+            overflow: hidden;
+            width: 600px;
+            float: left;
+            border: solid 1px blue;
+        }
+        .list
+        {
+            background: #fff;
+            min-width: 3400px;
+            float: left;
+        }
+        #arrowR
+        {
+            background: yellow;
+            width: 20px;
+            height: 50px;
+            float: right;
+            cursor: pointer;
+            margin-top: 90px;
+            text-align: center;
+            font-family: Arial;
+            font-size: 20px;
+            color: #000;
+            padding-top: 25px;
+        }
+        #arrowL
+        {
+            margin-top: 90px;
+            background: yellow;
+            width: 20px;
+            height: 50px;
+            float: left;
+            cursor: pointer;
+            text-align: center;
+            font-family: Arial;
+            font-size: 20px;
+            color: #000;
+            padding-top: 25px;
+        }
+        .item
+        {
+            background: red;
+            width: 140px;
+            height: 240px;
+            margin: 5px;
+            float: left;
+            position: relative;
+            text-align: center;
+            font-family: Arial;
+            font-size: 20px;
+            color: White;
+        }
