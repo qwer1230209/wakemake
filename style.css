@@ -1,32 +1,39 @@
 @charset "utf-8";
 
 * {
-    font-family: "나눔바른고딕","나눔고딕","돋움";
+    font-family: "나눔바른고딕", "나눔고딕", "돋움";
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
 }
+
 .clearfix:after {
-    display: block; content: ""; clear: both;
+    display: block;
+    content: "";
+    clear: both;
 }
+
 #container {
-max-width: 100%;
+    max-width: 100%;
 
 }
+
 header {
     display: flex;
-   align-items: center;
+    align-items: center;
     flex-direction: column;
     max-width: 100%;
 }
+
 .header_1 {
-display: flex;
+    display: flex;
     justify-content: center;
     height: 51px;
- width: 100%;
-background-color: black;
+    width: 100%;
+    background-color: black;
 }
+
 .header_1 ul {
     align-items: center;
     display: flex;
@@ -35,23 +42,29 @@ background-color: black;
     top: 30%;
     right: 18%;
 }
+
 .header_1 ul li {
-    font-size: 0.8em;margin-left: 23px;
+    font-size: 0.8em;
+    margin-left: 23px;
 }
+
 .header_1 a {
     color: #fff;
 }
+
 .header_logo {
     width: 100%;
     height: 181px;
     background-color: black;
-    
+
 }
+
 .header_logo img {
     display: block;
     margin: 0 auto;
 
 }
+
 .header_2 {
     display: flex;
     justify-content: flex-end;
@@ -59,10 +72,12 @@ background-color: black;
     width: 1200px;
     height: 78px;
 }
-.search_flex  {
+
+.search_flex {
     display: flex;
     width: 1200px;
 }
+
 .header_search {
     border: 1px solid #bababa;
     left: 18%;
@@ -70,52 +85,67 @@ background-color: black;
     width: 242px;
     height: 38px;
 }
+
 .header_search:hover {
     cursor: text;
 }
+
 .header_search img {
     width: 12%;
     margin: 2%;
     float: right;
 }
-.header_menu {display: flex;
+
+.header_menu {
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
 }
-.header_menu>li {
+
+.header_menu > li {
     width: 140px;
     text-align: center;
 }
 
-.header_menu>li>a {
+.header_menu > li > a {
     display: block;
-  padding: 20px;
+    padding: 20px;
 }
+
 .header_menu a {
     color: #383838;
 }
-.menu_1 {display: none;
+
+.menu_1 {
+    display: none;
     position: absolute;
-        z-index: 100;
+    z-index: 100;
     margin-top: 14px;
     width: 140px;
 }
-.menu_1>li>a {  z-index: 100;
+
+.menu_1 > li > a {
+    z-index: 100;
     display: block;
-   padding-top: 15px;
+    padding-top: 15px;
     padding-bottom: 15px;
 }
-.menu_1>li:hover {  z-index: 100;
-   background-color: #efefef;
+
+.menu_1 > li:hover {
+    z-index: 100;
+    background-color: #efefef;
 }
+
 .whitebox {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
-.white { display: none;
+
+.white {
+    display: none;
     position: absolute;
     z-index: 2;
     width: 1200px;
@@ -123,27 +153,33 @@ background-color: black;
     height: 155px;
     background-color: white;
 }
+
 .image_slider {
     border-bottom: 3px solid lightgray;
     border-top: 4px solid #d4202b;
     width: 100%;
-    display: flex; z-index:1;
+    display: flex;
+    z-index: 1;
     overflow: hidden;
 }
+
 .image_slider img {
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .active {
     z-index: 1;
 }
+
 .bg_c {
- background-size: cover;
+    background-size: cover;
     position: absolute;
     background-image: url(wake_img/bg.jpg);
     width: 100%;
     height: 2543px;
 }
+
 .wrap {
     display: flex;
     justify-content: center;
@@ -151,25 +187,34 @@ background-color: black;
     width: 100%;
     border: 1px solid green;
 }
+
 .wrap_wrap {
     z-index: 99;
     width: 1200px;
 }
+
 .redline {
     margin-bottom: 10px;
 }
-.best,.event {
+
+.best,
+.event {
     width: 100%;
-	height:941px;
+    height: 941px;
 }
-.best_title,.event_title {
+
+.best_title,
+.event_title {
     padding: 70px 30px 70px 0px;
     width: 50%;
     left: 200px;
 }
-.subtitle { margin-left: 20px;
+
+.subtitle {
+    margin-left: 20px;
     display: inline-block;
 }
+
 .underline {
     width: 206px;
     height: 20px;
@@ -177,22 +222,34 @@ background-color: black;
     background-image: url(wake_img/underline.png);
     background-repeat: no-repeat;
 }
-.best h1,p, .event h1,p {color: #3c3c3c;
+
+.best h1,
+p,
+.event h1,
+p {
+    color: #3c3c3c;
     display: inline-block;
-    font-family: "나눔스퀘어","돋움";
+    font-family: "나눔스퀘어", "돋움";
 }
+
 .week {
     font-size: 1.3rem;
 
 }
-.best h1,.event h1 {
+
+.best h1,
+.event h1 {
     font-size: 3rem;
 }
-.best ul,.event ul {top: 230px;
-   left: 200px;
+
+.best ul,
+.event ul {
+    top: 230px;
+    left: 200px;
     display: flex;
     justify-content: space-between;
 }
+
 .best_img {
     position: relative;
     background: url(wake_img/main_bestbox1.png);
@@ -205,15 +262,18 @@ background-color: black;
     justify-content: center;
     align-items: center;
 }
+
 .best_img img {
     width: 110px;
 }
+
 .best_img h1 {
     position: absolute;
     top: 20px;
     left: 21px;
     font-size: 2rem;
 }
+
 .best_box {
     background: url(wake_img/main_bestbox.png);
     background-repeat: no-repeat;
@@ -225,93 +285,58 @@ background-color: black;
     justify-content: center;
     align-items: center;
 }
+
+.best_img img:hover {
+    transition-duration: 0.3s;
+    opacity: 0.5;
+    width: 112px;
+}
+
+.best_img:hover {
+    cursor: pointer;
+}
+
 .best_box p {
-    font-family: "나눔바른고딕","돋움";
-    text-align:center;
+    font-family: "나눔바른고딕", "돋움";
+    text-align: center;
     padding: 30px 10px 30px 10px;
     display: block;
-    color: #ffd4d4;
+    color: lightgray;
     font-size: 1rem;
 }
-.best_box h2,h4 {
+
+.best_box h2,
+h4 {
     color: #fff;
 }
-.best_box h4 {padding: 0px 40px 0px 40px;
-    text-align: center;  font-weight: 100;
+
+.best_box h4 {
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+    font-weight: 100;
     font-size: 1rem;
 }
+
 .best_box h2 {
     font-weight: 100;
     font-size: 1.3rem;
 }
-.event h1,.event p {
+
+.event h1,
+.event p {
     color: #fff;
 }
+
 .event p {
     font-weight: 100;
 }
+
 .event_box {
+
     height: 400px;
     width: 100%;
-    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
 }
-  #containe
-        {
-            width: 642px;
-            height: auto;
-            overflow: hidden;
-        }
-        #list-container
-        {
-            overflow: hidden;
-            width: 600px;
-            float: left;
-            border: solid 1px blue;
-        }
-        .list
-        {
-            background: #fff;
-            min-width: 3400px;
-            float: left;
-        }
-        #arrowR
-        {
-            background: yellow;
-            width: 20px;
-            height: 50px;
-            float: right;
-            cursor: pointer;
-            margin-top: 90px;
-            text-align: center;
-            font-family: Arial;
-            font-size: 20px;
-            color: #000;
-            padding-top: 25px;
-        }
-        #arrowL
-        {
-            margin-top: 90px;
-            background: yellow;
-            width: 20px;
-            height: 50px;
-            float: left;
-            cursor: pointer;
-            text-align: center;
-            font-family: Arial;
-            font-size: 20px;
-            color: #000;
-            padding-top: 25px;
-        }
-        .item
-        {
-            background: red;
-            width: 140px;
-            height: 240px;
-            margin: 5px;
-            float: left;
-            position: relative;
-            text-align: center;
-            font-family: Arial;
-            font-size: 20px;
-            color: White;
-        }
+
+

@@ -6,6 +6,9 @@
     <title>:::WAKEMAKE COSMETIC:::</title>
     <script src=jquery-3.3.1.js></script>
     <script src=script.js></script>
+    <script src=slide.js></script>
+
+    <link rel="stylesheet" href="cssslide.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -103,75 +106,65 @@
                             <h1>EVENT</h1>
                             <p class="subtitle week">웨이크메이크의 다양한 이벤트를 만나보세요</p>
                         </div>
-                        <div class="event_box"> <div style="width: 100%; height: auto;" align="center">
-        <div style="width: 960px; height: auto;">
-            <h1 style="color: grey;">
-                Horizontal Slider
-            </h1>
-            <h2 style="color: grey;">
-                (Slide When Left and Right button click)</h2>
-            <div id="containe">
-                <div id="arrowL">
+                        <div class="event_box">
 
-                </div>
-                <div id="arrowR">
-                    >
-                </div>
-                <div id="list-container">
-                    <div class='list'>
-                        <div class='item'>
-                            1
-                        </div>
-                        <div class='item'>
-                            2
-                        </div>
-                        <div class='item'>
-                            3
-                        </div>
-                        <div class="item">
-                            4
-                        </div>
-                        <div class='item' style="background: blue;">
-                            5
-                        </div>
-                        <div class='item' style="background: blue;">
-                            6
-                        </div>
-                        <div class='item' style="background: blue;">
-                            7
-                        </div>
-                        <div class="item" style="background: blue;">
-                            8
-                        </div>
-                        <div class="item" style="background: green;">
-                            9
-                        </div>
-                        <div class="item" style="background: green;">
-                            10
-                        </div>
-                        <div class="item" style="background: green;">
-                            11
-                        </div>
-                        <div class="item" style="background: green;">
-                            12
-                        </div>
-                        <div class="item" style="background: pink;">
-                            13
-                        </div>
-                        <div class="item" style="background: pink;">
-                            14
-                        </div>
-                        <div class="item" style="background: pink;">
-                            15
-                        </div>
-                        <div class="item" style="background: pink;">
-                            16
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></div>
+<div class="wrapper">
+	<!-- 	INPUT FOR BUTTON SELECT SLIDE -->
+	<input type="radio" name="next" id="slide1" checked>
+	<input type="radio" name="next" id="slide2">
+	<input type="radio" name="next" id="slide3">
+	<input type="radio" name="next" id="slide4">
+
+	<!-- 	INPUT FOR BUTTON STOP&PLAY -->
+	<input type="radio" name="sto" id="play">
+	<input type="radio" name="sto" id="stop" checked>
+	<input type="radio" name="sto" id="pause">
+
+
+<div class="brain">
+	<label for="slide4" class="int manage_one left"></label>
+	<label for="slide2" class="int manage_one right"></label>
+	<label for="slide1" class="int manage_two left"></label>
+	<label for="slide3" class="int manage_two right"></label>
+	<label for="slide2" class="int manage_tre left"></label>
+	<label for="slide4" class="int manage_tre right"></label>
+	<label for="slide3" class="int manage_for left"></label>
+	<label for="slide1" class="int manage_for right"></label>
+		<!-- CONTAINER -->
+		<div class="cont">
+
+			<!-- BUTTON PLAY&STOP -->
+
+			<!-- IMAGE -->
+			<div class="image">
+				<img src="http://s017.radikal.ru/i432/1310/37/f331c96eef02.jpg" class="oneP" 	alt="Flash">
+				<img src="http://s004.radikal.ru/i208/1310/09/7a8e37a9e719.jpg" class="twoP" 	alt="Superman">
+				<img src="http://s020.radikal.ru/i713/1310/5f/a15fcdeb8fe8.jpg" class="threeP"  alt="Team">
+				<img src="http://s019.radikal.ru/i639/1310/02/1e3d78802280.jpg" class="fourP" 	alt="Joker">
+			</div>
+
+			<!-- ANIMATION LINE -->
+			<div class="aline">
+				<div class="line"></div>
+				<div class="bord"><span></span></div>
+				<div class="bord"><span></span></div>
+				<div class="bord"><span></span></div>
+				<div class="bord"><span></span></div>
+			</div>
+
+			<!-- BOTTOM LINE -->
+			<div class="but">
+				<label for="slide1" class="select_but select1" onclick=""><div></div></label>
+				<label for="slide2" class="select_but select2" onclick=""><div></div></label>
+				<label for="slide3" class="select_but select3" onclick=""><div></div></label>
+				<label for="slide4" class="select_but select4" onclick=""><div></div></label>
+			</div>
+		</div>
+</div>
+
+
+</div>
+                            </div>
                     </div>
                     <div class="review">
                         <div class="review_title">
