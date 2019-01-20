@@ -197,14 +197,21 @@ header {
     margin-bottom: 10px;
 }
 
-.best,
+.best {
+     width: 100%;
+    height: 942px;
+}
 .event {
     width: 100%;
-    height: 941px;
+    height: 795px;
+}
+.review {
+    width: 100%;
+    height: 688px;
 }
 
 .best_title,
-.event_title {
+.event_title,.review_title {
     padding: 70px 30px 70px 0px;
     width: 50%;
     left: 200px;
@@ -226,7 +233,7 @@ header {
 .best h1,
 p,
 .event h1,
-p {
+p,.review h1,p {
     color: #3c3c3c;
     display: inline-block;
     font-family: "나눔스퀘어", "돋움";
@@ -238,12 +245,12 @@ p {
 }
 
 .best h1,
-.event h1 {
+.event h1,.review h1 {
     font-size: 3rem;
 }
 
 .best ul,
-.event ul {
+.event ul,.review ul {
     top: 230px;
     left: 200px;
     display: flex;
@@ -338,5 +345,111 @@ h4 {
     display: flex;
     justify-content: center;
 }
+.reviewbox0 {
+     display: flex; justify-content: center;
+    align-items: center;
+}
+.review ul {
+    width: 100%;
+    background-color: lightgray;
+    display: flex; justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+    border-radius: 15px;
+}
+.review_box { border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 373px;
+    background-color: white;
+width: 747px;
+}
+.review_left {
+    position: relative;
+    width: 450px;
+    height: 352px;
+}
+.reimg {
+    position: absolute;
+}
+.reimg1 {
+    left: 3px;
+    top: 3px;
+}
 
+.reimg2 {
+    left: 3px;
+    top: 215px;
+}
+.reimg3 {
+    left: 229px;
+    top: 3px;
+}
+.reimg4 {
+    top: 215px;
+    left: 278px;
+}
 
+.reimg5 {
+    height: 349px;
+}
+p.reimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 221px;
+    height: 207px;
+    color: white;
+    opacity: 0;
+}
+p.reimg1:hover {
+    transition-duration: 0.5s ;
+    opacity: 1;
+}
+p.reimg2 {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    width: 271px;
+    height: 134px;
+    left: 3px;
+    top: 215px;
+}p.reimg2:hover {
+    transition-duration: 0.5s ;
+    opacity: 1;
+}
+p.reimg3 {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    width: 217px;
+    height: 208px;
+     left: 229px;
+    top: 3px;
+}p.reimg3:hover {
+    transition-duration: 0.5s ;
+    opacity: 1;
+}p.reimg4 {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    width: 167px;
+    height: 134px;
+     top: 215px;
+    left: 278px;
+}p.reimg4:hover {
+    transition-duration: 0.5s ;
+    opacity: 1;
+}
+p.reimg5 {
+    border: 1px solid #000;
+}

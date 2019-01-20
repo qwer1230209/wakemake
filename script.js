@@ -8,18 +8,18 @@ var now_img, next_img;
          now_img.removeClass("active");
      });
  }
- 
- 
- // 순환 
-  
+
+
+ // 순환
+
  /*
      fade_change() 함수를 순환시키는 timer 설정
-     mouse hover 로 애니메이션 멈춤/재생   
-  
+     mouse hover 로 애니메이션 멈춤/재생
+
  */
  var timer = setInterval("fade_change()", 4000);
-  
- $("div.image_slider").hover(function(){       // mouse enter 시 
+
+ $("div.image_slider").hover(function(){       // mouse enter 시
      clearInterval(timer);
  }, function(){                                  // mouse leave 시
      timer = setInterval("fade_change()",4000);
@@ -35,7 +35,7 @@ $(function(){
 		$(".menu_1").stop().slideDown("fast");
         $(".white").stop().slideDown("fast");
     });
-		
+
 	$(".header_menu > li").mouseout(function(){
 		$(".menu_1").stop().slideUp("fast");
         $(".white").stop().slideUp(".fast");
