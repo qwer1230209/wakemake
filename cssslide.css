@@ -239,6 +239,11 @@
 	-webkit-animation: anim-left ease .5s;
 	animation: anim-left ease .5s;
 }
+.arrow {
+    font-size: 1.7em;
+    margin: 27%;
+}
+
 .int{
 	display: none;
 }

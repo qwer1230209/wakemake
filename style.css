@@ -158,6 +158,7 @@ header {
     border-bottom: 3px solid lightgray;
     border-top: 4px solid #d4202b;
     width: 100%;
+    min-width: 1200px;
     display: flex;
     z-index: 1;
     overflow: hidden;
@@ -185,7 +186,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid green;
 }
 
 .wrap_wrap {
@@ -209,7 +209,13 @@ header {
     width: 100%;
     height: 688px;
 }
-
+.notice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 117px;
+}
 .best_title,
 .event_title,.review_title {
     padding: 70px 30px 70px 0px;
@@ -233,7 +239,7 @@ header {
 .best h1,
 p,
 .event h1,
-p,.review h1,p {
+p,.review h1,p,.notice h1,p {
     color: #3c3c3c;
     display: inline-block;
     font-family: "나눔스퀘어", "돋움";
@@ -241,7 +247,6 @@ p,.review h1,p {
 
 .week {
     font-size: 1.3rem;
-
 }
 
 .best h1,
@@ -256,7 +261,11 @@ p,.review h1,p {
     display: flex;
     justify-content: space-between;
 }
-
+.best ul li {padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.3);
+    border: 0px solid lightgray;
+}
 .best_img {
     position: relative;
     background: url(wake_img/main_bestbox1.png);
@@ -371,6 +380,10 @@ width: 747px;
     width: 450px;
     height: 352px;
 }
+.review_right {
+    position: relative;
+  
+}
 .reimg {
     position: absolute;
 }
@@ -450,6 +463,74 @@ p.reimg3 {display: flex;
     transition-duration: 0.5s ;
     opacity: 1;
 }
-p.reimg5 {
-    border: 1px solid #000;
+p.reimg5 {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 272px;
+    height: 349px;
+}
+
+p.reimg5:hover {
+    transition-duration: 0.5s ;
+    opacity: 1;
+}
+.review_box span {
+    margin: 10%;
+    padding: 5%;
+    border: 2px solid #fff;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+.notice h1 {
+    color: #fff;
+    font-size: 2em;
+}
+.notice p {
+    color: #fff;
+}
+.not_sub p:hover {
+    transition-duration: 0.2s;
+    color: gray;
+}
+.not_contents {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 53px;
+    left: 260px;
+}
+.notice .more {
+    position: absolute;
+    right: 0;
+    background-color: gray;
+    padding: 5px;
+}
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #000;
+  width: 100%;
+    
+}
+footer p {font-size: 0.6em;
+    text-align: center;
+    margin: 80px;
+}
+footer .sns {
+  
+    margin: 0 auto;  margin-top: 80px;
+  
+}
+footer .sns img {
+    height: 50px;
+    margin: 50px;
 }
