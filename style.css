@@ -26,7 +26,7 @@ header {
     max-width: 100%;
 }
 
-.header_1 {
+.header_1 {min-width: 1200px;
     display: flex;
     justify-content: center;
     height: 51px;
@@ -52,7 +52,7 @@ header {
     color: #fff;
 }
 
-.header_logo {
+.header_logo {min-width: 1200px;
     width: 100%;
     height: 181px;
     background-color: black;
@@ -74,8 +74,29 @@ header {
 }
 
 .search_flex {
+    position: relative;
     display: flex;
     width: 1200px;
+}
+/*.searchicon{
+ background-image: url('wake_img/seach_icon.png');
+    background-position:  2px 3px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 40px;
+    border: 0px;
+ cursor:pointer;
+ outline: 0;
+    border-radius: 8px;
+}*/
+.search-icon {
+    top: 3px;
+    position: absolute;
+    left: 205px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
 }
 
 .header_search {

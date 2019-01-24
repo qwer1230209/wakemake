@@ -1,4 +1,9 @@
+$(document).ready(function(){
+  $('.slider').slider();
+});
 
+
+//,,,,,,,,,,,
 var now_img, next_img;
  function fade_change(){
      now_img = $(".image_slider img:eq(0)");
