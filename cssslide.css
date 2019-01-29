@@ -1,7 +1,7 @@
 @charset "utf-8";
 .wrapper{
     background-color: dimgray;
-	height: 556px;
+	height: 496px;
 	width: 100%;
     border-radius: 22px;
 }
@@ -562,6 +562,11 @@ footer > p{
     -o-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
 }
+@media screen and (max-width: 1024px) {
+    .wrapper{
+	height: 456px;
+}
+}
  @media screen and (max-width: 900px) {
     .right, .left{
     	width: 50px;
@@ -593,4 +598,21 @@ footer > p{
 	width: 34px;
 	height: 34px;
 	}
+}
+@media screen and (max-width: 320px) {
+    .cont{
+	width:42%;
+
+}.wrapper{
+    margin-top: 60px;
+	height: 256px;
+}.select_but{
+    margin-top: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: rgba(0,0,0,.8);
+	z-index: 5;
+}
 }
