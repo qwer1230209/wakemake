@@ -14,8 +14,8 @@
     clear: both;
 }
 
-#container {
-    max-width: 100%;
+#container { width: 100%;
+  overflow: hidden;
 
 }
 
@@ -26,13 +26,66 @@ header {
     max-width: 100%;
 }
 
-.header_1 {min-width: 1200px;
+.header_1 {
     display: flex;
     justify-content: center;
     height: 51px;
     width: 100%;
     background-color: black;
 }
+
+/*/////////////////////////////////////////////////////*/
+.hamburger{display: none;
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menuh{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#fff;  position:absolute; top: 59px;  text-align:center; font-size:12px;}
+.menuh ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menuh li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menuh li:hover{display: block;    background:#f1f1f1; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menuh ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menuh ul li a:hover {  color: #666; text-decoration:none;}
+.menuh a{text-decoration:none; color:#666;}
+.menuh a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+span{padding-left:20px;}
+a{color:#336699;}
+
+/*/////////////////////////////////////////////////////*/
+
+
 
 .header_1 ul {
     align-items: center;
@@ -70,13 +123,14 @@ header {
     justify-content: flex-end;
     align-items: center;
     width: 1200px;
-    height: 78px;
+    height: 78px; max-width: 100%;
 }
 
 .search_flex {
     position: relative;
     display: flex;
-    width: 1200px;
+     width: 100%;
+    max-width: 100%;
 }
 /*.searchicon{
  background-image: url('wake_img/seach_icon.png');
@@ -111,12 +165,6 @@ header {
     cursor: text;
 }
 
-.header_search img {
-    width: 12%;
-    margin: 2%;
-    float: right;
-}
-
 .header_menu {
     display: flex;
     justify-content: center;
@@ -141,20 +189,18 @@ header {
 .menu_1 {
     display: none;
     position: absolute;
-    z-index: 100;
+    z-index: 101;
     margin-top: 14px;
     width: 140px;
 }
 
 .menu_1 > li > a {
-    z-index: 100;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .menu_1 > li:hover {
-    z-index: 100;
     background-color: #efefef;
 }
 
@@ -168,7 +214,7 @@ header {
 .white {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 100;
     width: 1200px;
     border: 1px solid lightgray;
     height: 155px;
@@ -179,7 +225,6 @@ header {
     border-bottom: 3px solid lightgray;
     border-top: 4px solid #d4202b;
     width: 100%;
-    min-width: 1200px;
     display: flex;
     z-index: 1;
     overflow: hidden;
@@ -206,10 +251,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%; max-width: 100%;
 }
 
-.wrap_wrap {
+.wrap_wrap {position: relative;
     z-index: 99;
     width: 1200px;
 }
@@ -240,7 +285,7 @@ header {
 .best_title,
 .event_title,.review_title {
     padding: 70px 30px 70px 0px;
-    width: 50%;
+    width: 100%;
     left: 200px;
 }
 
@@ -555,3 +600,245 @@ footer .sns img {
     height: 50px;
     margin: 50px;
 }
+
+@media screen and (max-width: 768px) { .header_menu{
+    font-size: 1rem;
+    } .header_menu >li{
+width: 100px;
+    }.header_search {
+    width: 172px;
+}.search-icon {
+    left: 135px;
+}.menu_1 {
+    width: 100px;
+}
+.menu_1 > li > a {
+    padding-top: 13px;
+}.best_title,.event_title,.review_title,.notice {
+    padding-left: 10%;
+    width: 100%;
+}
+    .header_1 ul li:last-child {margin-right: 20px;
+}.best ul {
+    margin: 0 auto;
+    padding-top: 0px;
+    display: inline-block;
+    width: 100%;
+    justify-content: space-between;
+}
+    .best ul li {margin-left: 10%;
+        display: inline-block;
+    }
+    .best ul li:nth-child(1) {
+        margin-left: 17%;
+    }
+    .best ul li:nth-child(3) {
+        margin-left: 17%;
+    }
+    .beimg4 {
+    margin: 0;
+}
+    .notice .more {
+    position: absolute;
+    right: 20%;
+    background-color: gray;
+    padding: 5px;
+}.best ul li {padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.3);
+    border: 0px solid lightgray;
+}
+.best_img {
+    position: relative;
+    background: url(wake_img/main_bestbox1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 234px;
+    height: 135px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_img img {
+    width: 70px;
+}
+
+.best_img h1 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    font-size: 2rem;
+}
+
+.best_box {
+    background: url(wake_img/main_bestbox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 234px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_img img:hover {
+    transition-duration: 0.3s;
+    opacity: 0.5;
+    width: 112px;
+}
+
+.best_img:hover {
+    cursor: pointer;
+}
+
+.best_box p {
+    font-family: "나눔바른고딕", "돋움";
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    color: lightgray;
+    font-size: 1rem;
+}
+
+.best_box h2,
+h4 {
+    color: #fff;
+}
+
+.best_box h4 {
+    padding: 10px 40px 0px 40px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.best_box h2 {
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+}
+@media screen and (max-width: 425px) {
+  
+    .hamburger {
+        display: block;
+    }.header_menu{
+    display: none;
+}
+
+    .best ul {
+        margin-top: 1%;
+        margin-left: 7%;
+       
+    }
+    .best_title,.event_title,.review_title,.notice_title {
+        padding: 60px 30px 70px 0px;
+    width: 30%;
+        margin-left: 269px;
+    }
+    .best ul li {padding: 0px;
+        display: inline-block;
+    border-radius: 10px;
+        margin: 20px;
+    box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.3);
+    border: 0px solid lightgray;
+}
+.best_img {
+    position: relative;
+    background: url(wake_img/main_bestbox1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 174px;
+    height: 135px;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_img img {
+    width: 70px;
+}
+
+.best_img h1 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    font-size: 2rem;
+}
+
+.best_box {
+    background: url(wake_img/main_bestbox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 174px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_img img:hover {
+    transition-duration: 0.3s;
+    opacity: 0.5;
+    width: 70px;
+}
+
+.best_img:hover {
+    cursor: pointer;
+}
+
+.best_box p {
+    font-family: "나눔바른고딕", "돋움";
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    color: lightgray;
+    font-size: 0.8rem;
+}
+
+.best_box h2,
+h4 {
+    color: #fff;
+}
+
+.best_box h4 {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.best_box h2 {
+    font-weight: 100;
+    font-size: 1.3rem;
+    }.review ul {
+    width: 100%;
+}
+    .not_contents {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 83px;
+    left: 200px;
+}.notice .more {
+    position: absolute;
+    right: 260px;
+    background-color: gray;
+    padding: 5px;
+}
+    footer .sns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .sns img {
+       margin: 5px;
+    height: 50px;
+}
+    
+}
+      

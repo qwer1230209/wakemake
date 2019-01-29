@@ -47,3 +47,22 @@ $(function(){
     });
       });
 
+$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menuh" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menuh" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menuh" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
